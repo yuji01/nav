@@ -22,7 +22,7 @@
             class="logo-input"
             nz-input
             [value]="settings.favicon"
-            (change)="onLogoChange($event, 'favicon')"
+            (input)="onLogoChange($event, 'favicon')"
           />
         </div>
       </label>
@@ -86,10 +86,10 @@
         <a
           target="_blank"
           [href]="
-            'https://' + cdnUrl + '/gh/xjh22222228/public@gh-pages/nav/logo.svg'
+            'https://' + cdnUrl + '/gh/liuzi6612/public@gh-pages/nav/logo.svg'
           "
           >{{
-            'https://' + cdnUrl + '/gh/xjh22222228/public@gh-pages/nav/logo.svg'
+            'https://' + cdnUrl + '/gh/liuzi6612/public@gh-pages/nav/logo.svg'
           }}</a
         >
       </div>
@@ -347,7 +347,7 @@
 
   <div class="divider"></div>
 
-  <nz-tabset [nzSelectedIndex]="tabActive">
+  <nz-tabs [nzSelectedIndex]="tabActive">
     <nz-tab [nzTitle]="'Light ' + $t('_theme')">
       <nz-form-item>
         <nz-form-label [nzSpan]="4">{{ $t('_docTitle') }}</nz-form-label>
@@ -1018,7 +1018,7 @@
         </nz-form-control>
       </nz-form-item>
     </nz-tab>
-  </nz-tabset>
+  </nz-tabs>
 
   <div class="divider"></div>
   <h2 class="title">{{ $t('_spiderRule') }}</h2>
